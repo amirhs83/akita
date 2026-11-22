@@ -116,7 +116,7 @@ export default function Hero() {
             </div>
 
             {/* Social proof row */}
-            <div className="mt-6 flex items-center gap-4">
+            <div className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2 max-md:gap-y-3">
               <div className="flex items-center">
                 {["/assets/goog1.webp", "/assets/goog2.webp", "/assets/goog3.webp", "/assets/goog4.webp"].map(
                   (src, i) => (
@@ -130,19 +130,17 @@ export default function Hero() {
                   )
                 )}
               </div>
-              <div className="flex items-center gap-2.5">
-                <div className="flex items-center gap-1">
-                  <span className="flex items-center">
-                    {[0, 1, 2, 3, 4].map((i) => (
-                      <Star key={i} className="h-4 w-4 fill-[#f59e0b] text-[#f59e0b]" />
-                    ))}
-                  </span>
-                  <span className="text-lg font-bold text-white">4.9</span>
-                </div>
-                <span className="text-sm font-medium text-white/85">
-                  3,000+ Families • 4.9-Star Google Rating
+              <div className="flex items-center gap-1.5">
+                <span className="flex items-center">
+                  {[0, 1, 2, 3, 4].map((i) => (
+                    <Star key={i} className="h-4 w-4 fill-[#f59e0b] text-[#f59e0b]" />
+                  ))}
                 </span>
+                <span className="text-lg font-bold text-white max-md:text-base">4.9</span>
               </div>
+              <span className="text-sm font-medium text-white/85 max-md:basis-full max-md:text-[12.5px]">
+                3,000+ Families • 4.9-Star Google Rating
+              </span>
             </div>
           </div>
 
@@ -179,23 +177,23 @@ export default function Hero() {
       {/* Stats bar */}
       <div className="relative z-[5] mx-auto -mt-[45px] max-w-[1180px] px-8 max-md:px-5">
         <div
-          className="flex items-stretch rounded-2xl border border-[rgba(124,111,205,0.35)] bg-white px-2 py-2.5 shadow-[0_6px_22px_rgba(26,26,46,0.12)]"
+          className="flex flex-wrap items-stretch rounded-2xl border border-[#EAE0CE] bg-white px-2 py-2.5 shadow-[0_6px_22px_rgba(26,26,46,0.12)] max-md:grid max-md:grid-cols-2 max-md:gap-y-1"
         >
           {statsItems.map((stat, i) => (
             <div
               key={stat.small}
-              className={`flex flex-1 items-center justify-center gap-3 px-4 py-0.5 max-md:basis-1/2 max-md:flex-grow-0 max-md:justify-start max-md:px-2.5 max-md:py-2 ${
-                i > 0 ? "border-l border-[#f0ebe3] max-md:nth-[3]:border-l-0" : ""
+              className={`flex min-w-0 flex-1 items-center justify-center gap-3 px-4 py-0.5 max-md:justify-start max-md:gap-2 max-md:px-2.5 max-md:py-2 ${
+                i > 0 ? "border-l border-[#f0ebe3] max-md:nth-[3]:border-l-0 max-md:nth-[5]:border-l-0" : ""
               }`}
             >
-              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#efeaff] text-[#7c6fcd]">
+              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#efeaff] text-[#7c6fcd] max-md:h-8 max-md:w-8">
                 {statIconMap[stat.icon]}
               </span>
-              <span className="flex flex-col leading-tight">
-                <span className="text-[17px] font-bold text-[#1a1a2e]" style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}>
+              <span className="flex min-w-0 flex-col leading-tight">
+                <span className="whitespace-nowrap text-[17px] font-bold text-[#1B2653] max-md:truncate max-md:text-[14.5px]" style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}>
                   {stat.big}
                 </span>
-                <span className="text-[13px] text-[#6b7080]">{stat.small}</span>
+                <span className="text-[13px] text-[#6b7080] max-md:text-[11px]">{stat.small}</span>
               </span>
             </div>
           ))}

@@ -16,7 +16,7 @@ export default function SiteFooter() {
   const [email, setEmail] = useState("");
 
   return (
-    <footer className="bg-[#0d0d1b] pb-7 pt-14 text-white">
+    <footer className="bg-[#141C38] pb-7 pt-14 text-white">
       <div className="mx-auto flex max-w-[1440px] flex-col px-8 max-md:px-5">
         {/* Top row */}
         <div className="mb-10 flex flex-wrap items-center justify-between gap-6">
@@ -72,7 +72,7 @@ export default function SiteFooter() {
           {/* Side column */}
           <div className="flex w-full flex-col gap-4 lg:w-[340px]">
             {/* Subscribe card */}
-            <div className="rounded-2xl border border-white/10 bg-[#13132a] p-5">
+            <div className="rounded-2xl border border-white/10 bg-[#1B2444] p-5">
               <div className="mb-4 flex items-start gap-3">
                 <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[rgba(124,111,205,0.18)] text-[#9c90d9]">
                   <Mail className="h-4.5 w-4.5" />
@@ -94,7 +94,7 @@ export default function SiteFooter() {
                 <button
                   type="submit"
                   aria-label="Subscribe"
-                  className="flex w-12 shrink-0 cursor-pointer items-center justify-center bg-[#7c6fcd] text-white transition-colors hover:bg-[#8d81d6]"
+                  className="flex w-12 shrink-0 cursor-pointer items-center justify-center bg-[#F7DFB0] text-[#4C3D1E] transition-colors hover:bg-[#F5D89C]"
                 >
                   <ArrowRight className="h-4 w-4" />
                 </button>
@@ -102,7 +102,7 @@ export default function SiteFooter() {
             </div>
 
             {/* Secure payments card */}
-            <div className="rounded-2xl border border-white/10 bg-[#13132a] p-4">
+            <div className="rounded-2xl border border-white/10 bg-[#1B2444] p-4">
               <div className="mb-3 flex items-start gap-3">
                 <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[rgba(124,111,205,0.18)] text-[#9c90d9]">
                   <Lock className="h-4 w-4" />

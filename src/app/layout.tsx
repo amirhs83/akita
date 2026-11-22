@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${rubik.variable} ${dmSans.variable} antialiased bg-white text-[#1f1b38]`}
+        className={`${rubik.variable} ${dmSans.variable} antialiased bg-[#F6F1E8] text-[#1B2653]`}
         style={{ fontFamily: "var(--font-rubik), var(--font-dm-sans), sans-serif" }}
       >
         {children}
