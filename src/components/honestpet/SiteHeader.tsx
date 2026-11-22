@@ -23,8 +23,21 @@ export default function SiteHeader() {
     >
       <div className="mx-auto flex max-w-[1440px] items-center justify-between gap-4 px-4 py-3 sm:px-5 md:px-8">
         {/* Logo */}
-        <span className="flex shrink-0 cursor-pointer select-none items-center" aria-label="HonestPet Logo">
-          <Image src="/assets/hp-logo.svg" alt="HonestPet Logo" width={140} height={40} priority className="h-9 w-auto" />
+        <span className="flex shrink-0 cursor-pointer select-none items-center gap-2.5" aria-label="AkitaClub.ir Logo">
+          <Image
+            src="/assets/akitaclub-logo.webp"
+            alt="AkitaClub.ir Logo"
+            width={88}
+            height={88}
+            priority
+            className="h-10 w-10 rounded-full object-cover sm:h-11 sm:w-11"
+          />
+          <span
+            className="text-[19px] font-bold leading-none text-[#1B2653] sm:text-[21px]"
+            style={{ fontFamily: "var(--font-rubik), sans-serif" }}
+          >
+            AkitaClub<span className="text-[#B98A2E]">.ir</span>
+          </span>
         </span>
 
         {/* Nav */}

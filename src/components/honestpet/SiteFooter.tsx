@@ -20,8 +20,20 @@ export default function SiteFooter() {
       <div className="mx-auto flex max-w-[1440px] flex-col px-8 max-md:px-5">
         {/* Top row */}
         <div className="mb-10 flex flex-wrap items-center justify-between gap-6">
-          <span className="flex cursor-pointer select-none items-center" aria-label="HonestPet Logo">
-            <Image src="/assets/hp-logo.svg" alt="HonestPet Logo" width={150} height={42} className="h-10 w-auto brightness-0 invert" />
+          <span className="flex cursor-pointer select-none items-center gap-2.5" aria-label="AkitaClub.ir Logo">
+            <Image
+              src="/assets/akitaclub-logo.webp"
+              alt="AkitaClub.ir Logo"
+              width={88}
+              height={88}
+              className="h-11 w-11 rounded-full object-cover"
+            />
+            <span
+              className="text-[20px] font-bold leading-none text-white"
+              style={{ fontFamily: "var(--font-rubik), sans-serif" }}
+            >
+              AkitaClub<span className="text-[#F7DFB0]">.ir</span>
+            </span>
           </span>
           <div className="flex flex-wrap items-center gap-6">
             <span className="flex items-center gap-3 text-[15px] text-white/90">

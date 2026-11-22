@@ -46,21 +46,39 @@ export default function Hero() {
       {/* Hero background */}
       <div className="relative min-h-[660px] max-md:min-h-[460px]">
         <div className="absolute inset-0 z-0 overflow-hidden">
+          {/* Mobile crop: framed on the owner and his Akita */}
+          <Image
+            src="/assets/hero-akita-mobile.webp"
+            alt="Owner with his Akita dog"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center md:hidden"
+          />
+          {/* Desktop banner */}
           <Image
             src="/assets/hero-akita-v2.webp"
             alt="Happy family with their Akita puppy"
             fill
             priority
             sizes="100vw"
-            className="object-cover object-[center_26%]"
+            className="hidden object-cover object-[center_26%] md:block"
           />
         </div>
         {/* Gradient overlay */}
         <div
-          className="absolute inset-0 z-[1]"
+          className="absolute inset-0 z-[1] max-md:hidden"
           style={{
             background:
               "linear-gradient(100deg, rgba(6,22,38,0.82) 0%, rgba(6,22,38,0.66) 24%, rgba(6,22,38,0.34) 42%, rgba(6,22,38,0) 56%, rgba(6,22,38,0) 100%)",
+          }}
+        />
+        {/* Mobile overlay: soft vertical scrim keeps the pair visible and text readable */}
+        <div
+          className="absolute inset-0 z-[1] md:hidden"
+          style={{
+            background:
+              "linear-gradient(180deg, rgba(6,22,38,0.56) 0%, rgba(6,22,38,0.30) 34%, rgba(6,22,38,0.32) 62%, rgba(6,22,38,0.52) 100%)",
           }}
         />
 
