@@ -348,14 +348,14 @@ export const footerColumns = [
   {
     title: "About Us",
     icon: "user",
-    links: ["About HonestPet", "Our Breeders", "Ethical Standards", "Testimonials", "Scam Protection"],
+    links: ["About Akita Club", "Our Breeders", "Ethical Standards", "Testimonials", "Scam Protection"],
   },
 ];
 
 export const infoSections = {
   intro: {
     title: "Puppies for Sale",
-    text: "Find your perfect puppy with HonestPet – healthy, happy, and raised by trusted breeders. Every pup is vet-checked, backed by a 10-year health guarantee, microchipped, and delivered safely to your door. Real breeders, real care, and lifelong support for your new best friend.",
+    text: "Find your perfect puppy with Akita Club – healthy, happy, and raised by trusted breeders. Every pup is vet-checked, backed by a 10-year health guarantee, microchipped, and delivered safely to your door. Real breeders, real care, and lifelong support for your new best friend.",
   },
   whyTitle: "Ethically-Bred Puppies for Sale Online",
   whyLead: "Here's why thousands of happy families trust us:",
@@ -374,7 +374,7 @@ export const infoSections = {
     },
     {
       h: "Transparent Health Records",
-      p: "Each HonestPet puppy comes with a full digital health record that includes vaccination history and vet reports. This way, you'll know your pup has been cared for from the start.",
+      p: "Each Akita Club puppy comes with a full digital health record that includes vaccination history and vet reports. This way, you'll know your pup has been cared for from the start.",
     },
     {
       h: "Training & Lifetime Support",
@@ -423,20 +423,20 @@ export const infoSections = {
   faqTitle: "Frequently Asked Questions",
   faqs: [
     {
-      q: "What Kinds of Dog Breeds Does HonestPet Have?",
+      q: "What Kinds of Dog Breeds Does Akita Club Have?",
       a: "We specialize in Japanese and American Akitas, raised by verified breeders you can trust. Every puppy comes with full health records and lifetime support.",
     },
     {
-      q: "How Does the Delivery of Honest Pet's Puppies Work?",
+      q: "How Does the Delivery of Akita Club's Puppies Work?",
       a: "After you choose your puppy, we work with USDA-licensed personnel to make sure it gets to your home or the nearest airport safely. For safety and comfort, all vehicles feature settings for the temperature.",
     },
     {
-      q: "Can I Meet the HonestPet Puppy First?",
+      q: "Can I Meet the Akita Club Puppy First?",
       a: "Yes! We can set up a video call with the breeder so you can meet your puppy and the breeder in person before you adopt.",
     },
     {
-      q: "Is the Health of My HonestPet Puppy Guaranteed?",
-      a: "Yes. You can be sure that your new puppy from HonestPet is healthy and properly cared for since they come with a 10-year health guarantee.",
+      q: "Is the Health of My Akita Club Puppy Guaranteed?",
+      a: "Yes. You can be sure that your new puppy from Akita Club is healthy and properly cared for since they come with a 10-year health guarantee.",
     },
   ],
 };

@@ -15,9 +15,9 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Puppies For Sale Online | HonestPet",
+  title: "Puppies For Sale Online | Akita Club",
   description:
-    "Find your perfect puppy with HonestPet – healthy, happy, and raised by trusted breeders. Every pup is vet-checked, backed by a 10-year health guarantee, microchipped, and delivered safely to your door.",
+    "Find your perfect puppy with Akita Club – healthy, happy, and raised by trusted breeders. Every pup is vet-checked, backed by a 10-year health guarantee, microchipped, and delivered safely to your door.",
 };
 
 export default function RootLayout({

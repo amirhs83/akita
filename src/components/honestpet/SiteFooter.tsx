@@ -47,7 +47,7 @@ export default function SiteFooter() {
               <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[rgba(247,223,176,0.15)] text-[#F7DFB0]">
                 <Mail className="h-4 w-4" />
               </span>
-              support@honestpet.com
+              support@akitaclub.ir
             </span>
           </div>
         </div>
@@ -142,7 +142,7 @@ export default function SiteFooter() {
         {/* Bottom row */}
         <div className="flex flex-wrap items-center justify-between gap-5">
           <div className="flex flex-wrap items-center gap-2 text-sm text-white/50">
-            <span>© 2026 HonestPet</span>
+            <span>© 2026 Akita Club</span>
             <span className="text-white/25">|</span>
             <span className="cursor-pointer hover:text-white/80">Privacy Policy</span>
             <span className="text-white/25">|</span>

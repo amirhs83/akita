@@ -170,7 +170,7 @@ export default function Hero() {
               WebkitBackdropFilter: "blur(14px) saturate(115%)",
             }}
           >
-            <h3 className="mb-4 whitespace-nowrap text-lg font-medium text-white">Why Families Trust HonestPet</h3>
+            <h3 className="mb-4 whitespace-nowrap text-lg font-medium text-white">Why Families Trust Akita Club</h3>
             <div className="flex flex-col">
               {trustItems.map((item, i) => (
                 <div
