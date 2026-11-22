@@ -44,11 +44,11 @@ export default function Hero() {
   return (
     <section className="relative z-[3]">
       {/* Hero background */}
-      <div className="relative min-h-[700px] max-md:min-h-[460px] 2xl:min-h-[820px]">
+      <div className="relative min-h-[780px] max-md:aspect-[13/20] max-md:min-h-[560px] 2xl:min-h-[880px]">
         <div className="absolute inset-0 z-0 overflow-hidden">
           {/* Mobile crop: framed on the owner and his Akita */}
           <Image
-            src="/assets/hero-akita-mobile-v3.webp"
+            src="/assets/hero-akita-mobile-v4.webp"
             alt="Owner hugging his Akita dog"
             fill
             priority
@@ -57,7 +57,7 @@ export default function Hero() {
           />
           {/* Desktop banner */}
           <Image
-            src="/assets/hero-akita-v4.webp"
+            src="/assets/hero-akita-v5.webp"
             alt="Owner hugging his Akita dog"
             fill
             priority
@@ -83,7 +83,7 @@ export default function Hero() {
         />
 
         {/* Inner content */}
-        <div className="relative z-[2] mx-auto flex max-w-[1280px] items-center justify-between gap-12 px-8 pb-24 pt-[84px] max-md:flex-col max-md:px-5 max-md:pb-14 max-md:pt-14 md:items-start">
+        <div className="relative z-[2] mx-auto flex max-w-[1280px] items-center justify-between gap-12 px-8 pb-24 pt-[84px] max-md:flex-col max-md:px-5 max-md:pb-14 max-md:pt-24 md:items-start">
           {/* Left column */}
           <div className="flex-1 text-white max-md:max-w-[560px] md:pt-[116px]">
             <h1
@@ -106,13 +106,13 @@ export default function Hero() {
                 Akita Club
               </span>
             </h1>
-            <p className="mb-12 max-w-[440px] text-[17px] leading-[1.5] text-white/90 md:mb-16 2xl:mb-40">
+            <p className="mb-12 max-w-[440px] text-[17px] leading-[1.5] text-white/90 md:mb-24 2xl:mb-44">
               Every puppy is vet-checked, backed by our health guarantee, and delivered safely to your
               home.
             </p>
 
             {/* Search bar */}
-            <div className="mt-2 flex max-w-[400px] items-center gap-3 rounded-full bg-white py-2 pl-6 pr-2 shadow-[0_10px_30px_rgba(20,12,60,0.28)] lg:max-w-[440px]">
+            <div className="mt-2 flex max-w-[400px] items-center gap-3 rounded-full bg-white py-2 pl-6 pr-2 shadow-[0_10px_30px_rgba(20,12,60,0.28)] max-md:mt-10 lg:max-w-[440px]">
               <Search className="h-5 w-5 shrink-0 text-gray-400" />
               <input
                 type="text"

@@ -33,7 +33,7 @@ export default function SiteHeader() {
             className="h-10 w-10 rounded-full object-cover sm:h-11 sm:w-11"
           />
           <span
-            className="hidden text-[19px] font-bold leading-none text-[#1B2653] sm:inline sm:text-[21px] lg:hidden 2xl:inline"
+            className="inline text-[16px] font-bold leading-none text-[#1B2653] sm:text-[19px] lg:hidden 2xl:inline 2xl:text-[21px]"
             style={{ fontFamily: "var(--font-rubik), sans-serif" }}
           >
             AkitaClub<span className="text-[#B98A2E]">.ir</span>
