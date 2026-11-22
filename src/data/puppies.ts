@@ -325,7 +325,7 @@ export const statsItems = [
   { big: "3,000+", small: "Puppies Placed", icon: "paw" },
   { big: "10-Year", small: "Health Guarantee", icon: "shield" },
   { big: "Free", small: "Nationwide Delivery", icon: "truck" },
-  { big: "USA Today", small: "Seen In", icon: "monitor" },
+  { big: "Karaj Today", small: "Seen In", icon: "monitor" },
 ];
 
 export const footerColumns = [

@@ -90,9 +90,8 @@ export default function Hero() {
               className="mb-5 text-[clamp(30px,6.8vw,46px)] font-normal leading-[1.08] tracking-[-0.5px]"
               style={{ fontFamily: "var(--font-rubik), sans-serif" }}
             >
-              Placing Happy Pups
+              Welcome to
               <br />
-              in{" "}
               <span
                 className="text-[#FFD98A]"
                 style={{
@@ -104,7 +103,7 @@ export default function Hero() {
                   WebkitTextFillColor: "transparent",
                 }}
               >
-                Loving Homes
+                Akita Club
               </span>
             </h1>
             <p className="mb-8 max-w-[440px] text-[17px] leading-[1.5] text-white/90">
@@ -136,14 +135,14 @@ export default function Hero() {
             {/* Social proof row */}
             <div className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2 max-md:gap-y-3">
               <div className="flex items-center">
-                {["/assets/goog1.webp", "/assets/goog2.webp", "/assets/goog3.webp", "/assets/goog4.webp"].map(
+                {["/assets/akita-teddy.webp", "/assets/akita-louie.webp", "/assets/akita-buddy.webp", "/assets/akita-annie.webp"].map(
                   (src, i) => (
                     <div
                       key={src}
                       className="relative h-9 w-9 overflow-hidden rounded-full border-2 border-white/70"
                       style={{ marginLeft: i === 0 ? 0 : -10, zIndex: 4 - i }}
                     >
-                      <Image src={src} alt={`Happy family ${i + 1}`} fill sizes="36px" className="object-cover" />
+                      <Image src={src} alt={`Happy Akita ${i + 1}`} fill sizes="36px" className="object-cover" />
                     </div>
                   )
                 )}
