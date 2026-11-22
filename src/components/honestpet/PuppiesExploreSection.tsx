@@ -29,7 +29,7 @@ export default function PuppiesExploreSection() {
           >
             Explore All Puppies
           </h2>
-          <span className="hidden shrink-0 cursor-pointer items-center gap-1 whitespace-nowrap rounded-full bg-[#EDE9FF] px-6 py-2 text-xl font-normal leading-7 text-[#7C5FD3] sm:inline-flex">
+          <span className="hidden shrink-0 cursor-pointer items-center gap-1 whitespace-nowrap rounded-full bg-[#F8EDD4] px-6 py-2 text-xl font-normal leading-7 text-[#A1761D] transition-colors hover:bg-[#F5E5C2] sm:inline-flex">
             View all
             <ChevronRight className="h-4 w-4" />
           </span>

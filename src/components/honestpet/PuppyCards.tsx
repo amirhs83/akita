@@ -126,21 +126,22 @@ function PuppyCardItem({ puppy }: { puppy: Puppy }) {
 
 function VideoCardItem({ video }: { video: DeliveryVideoCard }) {
   return (
-    <div className="@container relative h-full w-full min-h-[80cqw] cursor-pointer">
-      <video
-        src={video.src}
-        muted
-        loop
-        playsInline
-        preload="metadata"
-        className="absolute inset-0 h-full w-full rounded-[max(7cqw,14px)] object-cover"
+    <div className="@container relative h-full w-full min-h-[80cqw] cursor-pointer overflow-hidden rounded-[max(7cqw,14px)]">
+      <Image
+        src={video.image}
+        alt="Real puppy delivery moment"
+        fill
+        sizes="(max-width: 1023px) 46vw, (max-width: 1279px) 31vw, 24rem"
+        className="object-cover"
       />
       <div
-        className="absolute inset-0 top-0 flex flex-col items-center justify-center rounded-[max(7cqw,14px)] text-white"
-        style={{ background: "rgba(30,30,30,0.5)" }}
+        className="absolute inset-0 flex flex-col items-center justify-center text-white"
+        style={{ background: "rgba(9,24,40,0.42)" }}
       >
-        <Play className="h-9 w-9 fill-current" />
-        <span className="mt-2 text-sm font-semibold">See Real Delivery</span>
+        <span className="flex h-[4.2em] w-[4.2em] items-center justify-center rounded-full bg-white/25 backdrop-blur-[2px] ring-1 ring-white/60 text-[max(5cqw,11px)]">
+          <Play className="h-[1.6em] w-[1.6em] fill-current" />
+        </span>
+        <span className="mt-[0.9em] text-[max(4.6cqw,10.5px)] font-semibold drop-shadow-sm">See Real Delivery</span>
       </div>
     </div>
   );

@@ -32,10 +32,10 @@ export default function SiteHeader() {
           {navItems.map((item) => (
             <span
               key={item.label}
-              className={`inline-flex cursor-pointer items-center gap-1.5 whitespace-nowrap pb-0.5 text-[13px] font-medium leading-5 transition-colors xl:text-[15px] ${
-                item.active ? "text-[#6d5bd0]" : "text-[#1f1b38]"
+              className={`inline-flex cursor-pointer items-center gap-1.5 whitespace-nowrap pb-0.5 text-[13px] font-semibold leading-5 transition-colors xl:text-[15px] ${
+                item.active ? "text-[#1B2653]" : "text-[#1f1b38]/75"
               }`}
-              style={item.active ? { boxShadow: "inset 0 -2px 0 0 #6d5bd0" } : undefined}
+              style={item.active ? { boxShadow: "inset 0 -2px 0 0 #E9B84E" } : undefined}
             >
               {item.label}
               {item.dropdown && <ChevronDown className="h-3.5 w-3.5 opacity-70" />}
@@ -46,9 +46,9 @@ export default function SiteHeader() {
         {/* Actions */}
         <div className="flex shrink-0 items-center gap-3.5">
           <span className="hidden text-sm font-medium text-[#1f1b38] xl:inline-block">8am - midnight</span>
-          <span className="hidden items-center gap-2.5 rounded-[14px] bg-[rgba(109,91,208,0.1)] px-5 py-2.5 text-[#6d5bd0] sm:flex">
+          <span className="hidden items-center gap-2.5 rounded-[14px] bg-[#F7DFB0] px-5 py-2.5 text-[#4C3D1E] transition-colors hover:bg-[#F5D89C] sm:flex">
             <Phone className="h-4 w-4 fill-current" />
-            <span className="text-[15px] font-medium">Call Us</span>
+            <span className="text-[15px] font-semibold">Call Us</span>
           </span>
           <button
             type="button"

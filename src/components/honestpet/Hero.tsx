@@ -47,12 +47,12 @@ export default function Hero() {
       <div className="relative min-h-[660px] max-md:min-h-[460px]">
         <div className="absolute inset-0 z-0 overflow-hidden">
           <Image
-            src="/assets/hero-banner.webp"
-            alt="Happy puppy"
+            src="/assets/hero-akita-v2.webp"
+            alt="Happy family with their Akita puppy"
             fill
             priority
             sizes="100vw"
-            className="object-cover object-[center_38%]"
+            className="object-cover object-[center_26%]"
           />
         </div>
         {/* Gradient overlay */}
@@ -60,7 +60,7 @@ export default function Hero() {
           className="absolute inset-0 z-[1]"
           style={{
             background:
-              "linear-gradient(100deg, rgba(18,14,44,0.85) 0%, rgba(18,14,44,0.72) 24%, rgba(18,14,44,0.38) 42%, rgba(18,14,44,0) 56%, rgba(18,14,44,0) 100%)",
+              "linear-gradient(100deg, rgba(6,22,38,0.82) 0%, rgba(6,22,38,0.66) 24%, rgba(6,22,38,0.34) 42%, rgba(6,22,38,0) 56%, rgba(6,22,38,0) 100%)",
           }}
         />
 
@@ -76,10 +76,10 @@ export default function Hero() {
               <br />
               in{" "}
               <span
-                className="text-[#c2a6ff]"
+                className="text-[#FFD98A]"
                 style={{
                   background:
-                    "linear-gradient(100deg, #d8c4ff 0%, #9b7cff 33.3%, #f3edff 46%, #d8c4ff 66.6%, #9b7cff 100%)",
+                    "linear-gradient(100deg, #FFE9BC 0%, #F5C563 33.3%, #FFF6E0 46%, #FFE9BC 66.6%, #F5C563 100%)",
                   backgroundSize: "300% 100%",
                   WebkitBackgroundClip: "text",
                   backgroundClip: "text",
@@ -106,9 +106,9 @@ export default function Hero() {
               <button
                 type="button"
                 aria-label="Search"
-                className="flex h-[46px] w-[46px] shrink-0 cursor-pointer items-center justify-center rounded-full text-white"
+                className="flex h-[46px] w-[46px] shrink-0 cursor-pointer items-center justify-center rounded-full text-[#4C3D1E]"
                 style={{
-                  background: "linear-gradient(180deg, rgb(146,119,255) 0%, rgb(123,92,255) 55%, rgb(106,71,245) 100%)",
+                  background: "linear-gradient(180deg, #FFDF9E 0%, #F2C463 55%, #E9B84E 100%)",
                 }}
               >
                 <Search className="h-5 w-5" />
@@ -148,7 +148,7 @@ export default function Hero() {
           <aside
             className="hidden w-[344px] shrink-0 rounded-3xl border border-white/55 p-4 pb-2 text-white shadow-[0_24px_60px_rgba(0,0,0,0.35)] lg:block"
             style={{
-              background: "rgba(24,21,40,0.66)",
+              background: "rgba(9,24,40,0.62)",
               backdropFilter: "blur(14px) saturate(115%)",
               WebkitBackdropFilter: "blur(14px) saturate(115%)",
             }}
@@ -160,7 +160,7 @@ export default function Hero() {
                   key={item.title}
                   className={`flex items-start gap-3.5 ${i < trustItems.length - 1 ? "border-b border-white/10 pb-2.5 mb-2.5" : ""}`}
                 >
-                  <span className="flex h-[50px] w-[50px] shrink-0 items-center justify-center rounded-full text-white" style={{ background: "linear-gradient(180deg, #9279ff 0%, #7b5cff 100%)" }}>
+                  <span className="flex h-[50px] w-[50px] shrink-0 items-center justify-center rounded-full text-white" style={{ background: "linear-gradient(180deg, #FFDF9E 0%, #E9B84E 100%)" }}>
                     {trustIconMap[item.icon]}
                   </span>
                   <div className="min-w-0 pt-1">
@@ -186,7 +186,7 @@ export default function Hero() {
                 i > 0 ? "border-l border-[#f0ebe3] max-md:nth-[3]:border-l-0 max-md:nth-[5]:border-l-0" : ""
               }`}
             >
-              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#efeaff] text-[#7c6fcd] max-md:h-8 max-md:w-8">
+              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#FBF1DA] text-[#A97C1F] max-md:h-8 max-md:w-8">
                 {statIconMap[stat.icon]}
               </span>
               <span className="flex min-w-0 flex-col leading-tight">

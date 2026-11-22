@@ -25,14 +25,14 @@ export default function SiteFooter() {
           </span>
           <div className="flex flex-wrap items-center gap-6">
             <span className="flex items-center gap-3 text-[15px] text-white/90">
-              <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[rgba(124,111,205,0.18)] text-[#9c90d9]">
+              <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[rgba(247,223,176,0.15)] text-[#F7DFB0]">
                 <Phone className="h-4 w-4" />
               </span>
               (855) 374-1985
             </span>
             <span className="hidden h-6 w-px bg-white/15 sm:block" />
             <span className="flex items-center gap-3 text-[15px] text-white/90">
-              <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[rgba(124,111,205,0.18)] text-[#9c90d9]">
+              <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[rgba(247,223,176,0.15)] text-[#F7DFB0]">
                 <Mail className="h-4 w-4" />
               </span>
               support@honestpet.com
@@ -47,7 +47,7 @@ export default function SiteFooter() {
             {footerColumns.map((col) => (
               <div key={col.title}>
                 <h3 className="mb-5 flex items-center gap-2.5 text-[15px] font-bold text-white">
-                  <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[rgba(124,111,205,0.18)] text-[#9c90d9]">
+                  <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[rgba(247,223,176,0.15)] text-[#F7DFB0]">
                     {colIconMap[col.icon]}
                   </span>
                   {col.title}
@@ -60,7 +60,7 @@ export default function SiteFooter() {
                   ))}
                 </ul>
                 {col.viewAll && (
-                  <span className="mt-4 inline-flex cursor-pointer items-center gap-1.5 text-sm font-semibold text-[#7c6fcd]">
+                  <span className="mt-4 inline-flex cursor-pointer items-center gap-1.5 text-sm font-semibold text-[#F7DFB0]">
                     View All Breeds
                     <ArrowRight className="h-3.5 w-3.5" />
                   </span>
@@ -74,7 +74,7 @@ export default function SiteFooter() {
             {/* Subscribe card */}
             <div className="rounded-2xl border border-white/10 bg-[#1B2444] p-5">
               <div className="mb-4 flex items-start gap-3">
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[rgba(124,111,205,0.18)] text-[#9c90d9]">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[rgba(247,223,176,0.15)] text-[#F7DFB0]">
                   <Mail className="h-4.5 w-4.5" />
                 </span>
                 <div>
@@ -104,7 +104,7 @@ export default function SiteFooter() {
             {/* Secure payments card */}
             <div className="rounded-2xl border border-white/10 bg-[#1B2444] p-4">
               <div className="mb-3 flex items-start gap-3">
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[rgba(124,111,205,0.18)] text-[#9c90d9]">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[rgba(247,223,176,0.15)] text-[#F7DFB0]">
                   <Lock className="h-4 w-4" />
                 </span>
                 <p className="text-[13px] leading-snug text-white/80">
@@ -139,16 +139,16 @@ export default function SiteFooter() {
           <div className="flex items-center gap-4">
             <span className="text-sm font-semibold text-white">Follow Us</span>
             <div className="flex items-center gap-2.5">
-              <span className="flex h-9 w-9 cursor-pointer items-center justify-center rounded-full bg-[rgba(255,255,255,0.08)] text-white/80 transition-colors hover:bg-[rgba(124,111,205,0.3)]" aria-label="Facebook">
+              <span className="flex h-9 w-9 cursor-pointer items-center justify-center rounded-full bg-[rgba(255,255,255,0.08)] text-white/80 transition-colors hover:bg-[rgba(247,223,176,0.25)]" aria-label="Facebook">
                 <Facebook className="h-4 w-4" />
               </span>
-              <span className="flex h-9 w-9 cursor-pointer items-center justify-center rounded-full bg-[rgba(255,255,255,0.08)] text-white/80 transition-colors hover:bg-[rgba(124,111,205,0.3)]" aria-label="Instagram">
+              <span className="flex h-9 w-9 cursor-pointer items-center justify-center rounded-full bg-[rgba(255,255,255,0.08)] text-white/80 transition-colors hover:bg-[rgba(247,223,176,0.25)]" aria-label="Instagram">
                 <Instagram className="h-4 w-4" />
               </span>
-              <span className="flex h-9 w-9 cursor-pointer items-center justify-center rounded-full bg-[rgba(255,255,255,0.08)] text-white/80 transition-colors hover:bg-[rgba(124,111,205,0.3)]" aria-label="YouTube">
+              <span className="flex h-9 w-9 cursor-pointer items-center justify-center rounded-full bg-[rgba(255,255,255,0.08)] text-white/80 transition-colors hover:bg-[rgba(247,223,176,0.25)]" aria-label="YouTube">
                 <Youtube className="h-4 w-4" />
               </span>
-              <span className="flex h-9 w-9 cursor-pointer items-center justify-center rounded-full bg-[rgba(255,255,255,0.08)] text-white/80 transition-colors hover:bg-[rgba(124,111,205,0.3)]" aria-label="Twitter">
+              <span className="flex h-9 w-9 cursor-pointer items-center justify-center rounded-full bg-[rgba(255,255,255,0.08)] text-white/80 transition-colors hover:bg-[rgba(247,223,176,0.25)]" aria-label="Twitter">
                 <Twitter className="h-4 w-4" />
               </span>
             </div>
