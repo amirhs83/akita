@@ -33,7 +33,7 @@ export default function SiteHeader() {
             className="h-10 w-10 rounded-full object-cover sm:h-11 sm:w-11"
           />
           <span
-            className="text-[19px] font-bold leading-none text-[#1B2653] sm:text-[21px]"
+            className="hidden text-[19px] font-bold leading-none text-[#1B2653] sm:inline sm:text-[21px] lg:hidden 2xl:inline"
             style={{ fontFamily: "var(--font-rubik), sans-serif" }}
           >
             AkitaClub<span className="text-[#B98A2E]">.ir</span>
@@ -41,7 +41,7 @@ export default function SiteHeader() {
         </span>
 
         {/* Nav */}
-        <nav className="hidden min-w-0 flex-1 items-center justify-center gap-x-3 lg:flex xl:gap-x-7" aria-label="Main navigation">
+        <nav className="hidden min-w-0 flex-1 items-center justify-center gap-x-3 lg:flex xl:gap-x-5" aria-label="Main navigation">
           {navItems.map((item) => (
             <span
               key={item.label}
@@ -58,7 +58,7 @@ export default function SiteHeader() {
 
         {/* Actions */}
         <div className="flex shrink-0 items-center gap-3.5">
-          <span className="hidden text-sm font-medium text-[#1f1b38] xl:inline-block">8am - midnight</span>
+          <span className="hidden text-sm font-medium text-[#1f1b38] 2xl:inline-block">8am - midnight</span>
           <span className="hidden items-center gap-2.5 rounded-[14px] bg-[#F7DFB0] px-5 py-2.5 text-[#4C3D1E] transition-colors hover:bg-[#F5D89C] sm:flex">
             <Phone className="h-4 w-4 fill-current" />
             <span className="text-[15px] font-semibold">Call Us</span>

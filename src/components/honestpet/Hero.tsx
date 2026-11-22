@@ -48,8 +48,8 @@ export default function Hero() {
         <div className="absolute inset-0 z-0 overflow-hidden">
           {/* Mobile crop: framed on the owner and his Akita */}
           <Image
-            src="/assets/hero-akita-mobile.webp"
-            alt="Owner with his Akita dog"
+            src="/assets/hero-akita-mobile-v3.webp"
+            alt="Owner hugging his Akita dog"
             fill
             priority
             sizes="100vw"
@@ -57,12 +57,12 @@ export default function Hero() {
           />
           {/* Desktop banner */}
           <Image
-            src="/assets/hero-akita-v2.webp"
-            alt="Happy family with their Akita puppy"
+            src="/assets/hero-akita-v3.webp"
+            alt="Owner hugging his Akita dog"
             fill
             priority
             sizes="100vw"
-            className="hidden object-cover object-[center_26%] md:block"
+            className="hidden object-cover object-[8%_26%] md:block"
           />
         </div>
         {/* Gradient overlay */}
@@ -70,7 +70,7 @@ export default function Hero() {
           className="absolute inset-0 z-[1] max-md:hidden"
           style={{
             background:
-              "linear-gradient(100deg, rgba(6,22,38,0.82) 0%, rgba(6,22,38,0.66) 24%, rgba(6,22,38,0.34) 42%, rgba(6,22,38,0) 56%, rgba(6,22,38,0) 100%)",
+              "linear-gradient(100deg, rgba(6,22,38,0.88) 0%, rgba(6,22,38,0.72) 20%, rgba(6,22,38,0.34) 36%, rgba(6,22,38,0) 48%, rgba(6,22,38,0) 100%)",
           }}
         />
         {/* Mobile overlay: soft vertical scrim keeps the pair visible and text readable */}
@@ -112,7 +112,7 @@ export default function Hero() {
             </p>
 
             {/* Search bar */}
-            <div className="flex max-w-[440px] items-center gap-3 rounded-full bg-white py-2 pl-6 pr-2 shadow-[0_10px_30px_rgba(20,12,60,0.28)]">
+            <div className="flex max-w-[400px] items-center gap-3 rounded-full bg-white py-2 pl-6 pr-2 shadow-[0_10px_30px_rgba(20,12,60,0.28)] lg:max-w-[440px]">
               <Search className="h-5 w-5 shrink-0 text-gray-400" />
               <input
                 type="text"
@@ -207,7 +207,7 @@ export default function Hero() {
                 {statIconMap[stat.icon]}
               </span>
               <span className="flex min-w-0 flex-col leading-tight">
-                <span className="whitespace-nowrap text-[17px] font-bold text-[#1B2653] max-md:truncate max-md:text-[14.5px]" style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}>
+                <span className="truncate whitespace-nowrap text-[17px] font-bold text-[#1B2653] max-md:text-[14.5px]" style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}>
                   {stat.big}
                 </span>
                 <span className="text-[13px] text-[#6b7080] max-md:text-[11px]">{stat.small}</span>
