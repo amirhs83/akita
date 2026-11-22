@@ -111,8 +111,8 @@ export default function Hero() {
               home.
             </p>
 
-            {/* Search bar — pinned to the bottom of the hero, right above the stats box */}
-            <div className="mt-auto flex max-w-[400px] items-center gap-3 rounded-full bg-white py-2 pl-6 pr-2 shadow-[0_10px_30px_rgba(20,12,60,0.28)] lg:max-w-[440px]">
+            {/* Search bar — pinned to the bottom of the hero on desktop; on mobile it lives in the floating card below */}
+            <div className="mt-auto flex max-w-[400px] items-center gap-3 rounded-full bg-white py-2 pl-6 pr-2 shadow-[0_10px_30px_rgba(20,12,60,0.28)] max-md:hidden lg:max-w-[440px]">
               <Search className="h-5 w-5 shrink-0 text-gray-400" />
               <input
                 type="text"
@@ -132,8 +132,8 @@ export default function Hero() {
               </button>
             </div>
 
-            {/* Social proof row */}
-            <div className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2 max-md:gap-y-3">
+            {/* Social proof row (desktop hero) */}
+            <div className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2 max-md:hidden max-md:gap-y-3">
               <div className="flex items-center">
                 {["/assets/akita-teddy.webp", "/assets/akita-louie.webp", "/assets/akita-buddy.webp", "/assets/akita-annie.webp"].map(
                   (src, i) => (
@@ -191,8 +191,61 @@ export default function Hero() {
         </div>
       </div>
 
+      {/* Mobile floating search card — overlaps the photo bottom edge, keeps faces fully visible */}
+      <div className="relative z-[6] mx-5 -mt-12 md:hidden">
+        <div className="rounded-3xl border border-[#EAE0CE] bg-white p-4 shadow-[0_12px_34px_rgba(26,26,46,0.16)]">
+          <div className="flex items-center gap-3 rounded-full bg-[#F6F1E8] py-2 pl-5 pr-2">
+            <Search className="h-5 w-5 shrink-0 text-gray-400" />
+            <input
+              type="text"
+              placeholder="Search any breed"
+              aria-label="Search any breed"
+              className="min-w-0 flex-1 border-none bg-transparent text-base font-normal text-[#2a2640] outline-none placeholder:text-gray-400"
+            />
+            <button
+              type="button"
+              aria-label="Search"
+              className="flex h-[46px] w-[46px] shrink-0 cursor-pointer items-center justify-center rounded-full text-[#4C3D1E]"
+              style={{
+                background: "linear-gradient(180deg, #FFDF9E 0%, #F2C463 55%, #E9B84E 100%)",
+              }}
+            >
+              <Search className="h-5 w-5" />
+            </button>
+          </div>
+
+          {/* Social proof row */}
+          <div className="mt-3.5 flex flex-wrap items-center gap-x-4 gap-y-2">
+            <div className="flex items-center">
+              {["/assets/akita-teddy.webp", "/assets/akita-louie.webp", "/assets/akita-buddy.webp", "/assets/akita-annie.webp"].map(
+                (src, i) => (
+                  <div
+                    key={src}
+                    className="relative h-9 w-9 overflow-hidden rounded-full border-2 border-white"
+                    style={{ marginLeft: i === 0 ? 0 : -10, zIndex: 4 - i }}
+                  >
+                    <Image src={src} alt={`Happy Akita ${i + 1}`} fill sizes="36px" className="object-cover" />
+                  </div>
+                )
+              )}
+            </div>
+            <div className="flex items-center gap-1.5">
+              <span className="flex items-center">
+                {[0, 1, 2, 3, 4].map((i) => (
+                  <Star key={i} className="h-4 w-4 fill-[#f59e0b] text-[#f59e0b]" />
+                ))}
+              </span>
+              <span className="text-lg font-bold text-[#1B2653]">4.9</span>
+            </div>
+            <span className="text-sm font-medium text-[#5B6172] max-sm:basis-full max-sm:text-[12.5px]">
+              3,000+ Families • 4.9-Star Google Rating
+            </span>
+          </div>
+        </div>
+      </div>
+
       {/* Stats bar */}
-      <div className="relative z-[5] mx-auto -mt-[45px] max-w-[1180px] px-8 max-md:px-5">
+      <div className="relative z-[5] mx-auto -mt-[45px] max-w-[1180px] px-8 max-md:mt-3 max-md:px-5">
         <div
           className="flex flex-wrap items-stretch rounded-2xl border border-[#EAE0CE] bg-white px-2 py-2.5 shadow-[0_6px_22px_rgba(26,26,46,0.12)] max-md:grid max-md:grid-cols-2 max-md:gap-y-1"
         >
