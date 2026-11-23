@@ -46,10 +46,10 @@ export default function Hero() {
       {/* Hero background */}
       <div className="relative flex min-h-[780px] max-md:aspect-[13/20] max-md:min-h-[560px] 2xl:min-h-[880px]">
         <div className="absolute inset-0 z-0 overflow-hidden">
-          {/* Mobile crop: full-body Akita on the golden studio background */}
+          {/* Mobile crop: framed on the owner and his Akita */}
           <Image
-            src="/assets/hero-akita-mobile-v5.webp"
-            alt="Akita dog on a golden studio background"
+            src="/assets/hero-akita-mobile-v4.webp"
+            alt="Owner hugging his Akita dog"
             fill
             priority
             sizes="100vw"
@@ -57,8 +57,8 @@ export default function Hero() {
           />
           {/* Desktop banner */}
           <Image
-            src="/assets/hero-akita-v6.webp"
-            alt="Akita dog on a golden studio background"
+            src="/assets/hero-akita-v5.webp"
+            alt="Owner hugging his Akita dog"
             fill
             priority
             sizes="100vw"
