@@ -22,7 +22,7 @@ export default function SiteFooter() {
         <div className="mb-10 flex flex-wrap items-center justify-between gap-6">
           <span className="flex cursor-pointer select-none items-center gap-2.5" aria-label="AkitaClub.ir Logo">
             <Image
-              src="/assets/akitaclub-logo.webp"
+              src="/assets/akitaclub-logo-v2.webp"
               alt="AkitaClub.ir Logo"
               width={88}
               height={88}

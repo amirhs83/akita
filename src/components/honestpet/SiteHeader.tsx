@@ -25,7 +25,7 @@ export default function SiteHeader() {
         {/* Logo */}
         <span className="flex shrink-0 cursor-pointer select-none items-center gap-2.5" aria-label="AkitaClub.ir Logo">
           <Image
-            src="/assets/akitaclub-logo.webp"
+            src="/assets/akitaclub-logo-v2.webp"
             alt="AkitaClub.ir Logo"
             width={88}
             height={88}
@@ -33,7 +33,7 @@ export default function SiteHeader() {
             className="h-10 w-10 rounded-full object-cover sm:h-11 sm:w-11"
           />
           <span
-            className="inline text-[16px] font-bold leading-none text-[#1B2653] sm:text-[19px] lg:hidden 2xl:inline 2xl:text-[21px]"
+            className="inline text-[16px] font-bold leading-none text-[#1B2653] sm:text-[19px] 2xl:text-[21px]"
             style={{ fontFamily: "var(--font-rubik), sans-serif" }}
           >
             AkitaClub<span className="text-[#B98A2E]">.ir</span>
